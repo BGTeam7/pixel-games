@@ -1,16 +1,14 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+h1 {
+  font-family: 'Tektur';
+  font-size: 48px;
 }
 
 .App-header {
@@ -35,4 +33,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  color:white;
+  background-color: #111;
+  border-bottom: solid #B4CCFF;
+}
+
+.navbar a {
+  padding: 0 11px;
+}
+
+.navbar a.active {
+  padding: 0 8px;
+  border: #FFA8CD solid 1.5px;
+  box-shadow: 0 0 10px #F7006A;
+  border-radius: 2px;
+}
+
+.navbar a:hover {
+  color: #FFA8CD;
+  text-shadow: 0 0 10px #F7006A;
+  transition: all 0.2s;
+}
+
+.blueframe {
+  background-color: rgba(57, 120, 252, 0.1);
+  box-shadow: 0 0 10px #3978FC;
+}
+
+.pinkframe {
+  box-shadow: 0 0 10px #F7006A;
+}
+
+.newscard {
+  background-color: rgba(57, 120, 252, 0.1);
+  box-shadow: 0 0 10px #3978FC;
+  backdrop-filter: blur(40px);
+  width: 100%;
+  border-radius: 5px;
+  height: 200px;
+}
+
+.newscard:hover .date, .newscard:hover .title {
+  display: none;
+  opacity: 0;
+  animation: fadeOut 0.3s ease-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  50% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.newscard .date {
+  margin: 24px;
+  color: #bbb;
+
+}
+
+.newscard .title {
+  font-family: "Tektur";
+  font-size: 40px;
 }
