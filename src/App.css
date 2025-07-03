@@ -22,6 +22,10 @@ h1 {
   color: white;
 }
 
+section {
+  margin: 24px 0;
+}
+
 .App-link {
   color: #61dafb;
 }
