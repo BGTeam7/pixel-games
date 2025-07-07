@@ -87,9 +87,13 @@ section {
 
 .teamcard {
   height: 200px;
+  min-width: 150px;
+  max-width: 200px;
   width: 100%;
 }
-
+/* Corner frame design by Temani Afif */
+/* https://css-tip.com/corner-only-border-image/ */
+/* Edited to include hover transition */
 .corner-frame {
   --b: 2px;   /* thickness of the border */
   --c: #B4CCFF;   /* color of the border */

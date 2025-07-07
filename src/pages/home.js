@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
 const Home = () => {
@@ -13,21 +14,24 @@ const Home = () => {
 
         </div>
         <section>
-            <div className="flex gap-5">
-                <div className="flex-auto bg-white">image thing</div>
-                <h1 className="text-4xl">IT'S A CONSPIRACY</h1>
+            <div className="md:flex gap-5">
+                <div className="hidden md:block md:flex-auto bg-white">image thing</div>
+                <h1 className="text-3xl md:text-4xl ml-10 md:ml-0">IT'S A CONSPIRACY</h1>
                 <div className="flex-auto bg-white">image thing</div>
             </div>
             <h2 className="text-center my-8">Meet Mingo, a bird on a mission.</h2>
             <div className="bluefill mx-24 md:mx-48">
-                <div className="corner-frame p-48">insert image here</div>
+                <Link to="/conspiracy">
+                    <div className="corner-frame md:p-48" >insert image here</div>
+                </Link>
+                
             </div>
             <h2 className="text-center my-8">Find out if it's all a conspiracy... or is it?</h2>
         </section>
         <section>
-            <div className="flex gap-5">
-                <div className="flex-auto bg-white">image thing</div>
-                <h1 className="text-4xl">WHAT'S NEW?</h1>
+            <div className="md:flex gap-5">
+                <div className="hidden md:block md:flex-auto bg-white">image thing</div>
+                <h1 className="text-3xl md:text-4xl ml-10 md:ml-0">WHAT'S NEW?</h1>
                 <div className="flex-auto bg-white">image thing</div>
             </div>
         </section>

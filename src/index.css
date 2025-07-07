@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #111;
   color: white;
+  overflow-x: hidden;
 }
 .tektur-bold {
   font-family: "Tektur", sans-serif;

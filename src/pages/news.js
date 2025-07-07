@@ -4,7 +4,7 @@ import NewsCard from "../components/newscard";
 const News = () => {
     return (
         <>
-        <div className="ml-10 my-12 flex gap-5">
+        <div className="ml-10 my-12 md:flex gap-5">
             <h1 className="text-3xl">LATEST NEWS</h1>
             <div className="flex-auto bg-white">image thing</div>
         </div>
