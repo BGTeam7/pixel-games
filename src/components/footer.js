@@ -8,8 +8,8 @@ const Footer = () => {
 
 
     return (
-        <footer className="my-10 mx-24 border-solid border-pink-300 border-2 p-2 pinkframe">
-            <div className="border-solid border-blue-300 border-2 p-10 blueframe sm:grid grid-cols-4">
+        <footer className="my-10 mx-24 border-solid rounded-lg border-pink-300 border-2 p-2 pinkframe">
+            <div className="border-solid rounded-md border-blue-300 border-2 p-10 pb-4 bluefill sm:grid gap-6 grid-cols-4">
                 <div className="col-span-2">
                     <p className="text-lg font-semibold">FOLLOW US</p>
                     <div className="flex gap-2">
@@ -34,7 +34,7 @@ const Footer = () => {
                         <li>Contact Us</li>
                     </ul>
                 </div>
-                <div className="col-span-4 text-center">
+                <div className="col-span-4 text-center mt-12">
                     Pixel Games Studios @2025
                 </div>
             </div>

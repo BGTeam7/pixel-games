@@ -22,6 +22,11 @@ h1 {
   color: white;
 }
 
+.hero {
+  height: 60vh;
+  background-color: slategrey;
+}
+
 section {
   margin: 24px 0;
 }
@@ -62,7 +67,7 @@ section {
   transition: all 0.2s;
 }
 
-.blueframe {
+.bluefill {
   background-color: rgba(57, 120, 252, 0.1);
   box-shadow: 0 0 10px #3978FC;
 }
@@ -78,6 +83,32 @@ section {
   width: 100%;
   border-radius: 5px;
   height: 200px;
+}
+
+.teamcard {
+  height: 200px;
+  width: 100%;
+}
+
+.corner-frame {
+  --b: 2px;   /* thickness of the border */
+  --c: #B4CCFF;   /* color of the border */
+  --w: 10px;  /* width of border */
+  
+  transition: 0.3s ease-in-out;
+  border: var(--b) solid #0000; /* space for the border */
+  --_g: #0000 90deg,var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
+  background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--_g)) 0    0    / var(--_p),
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g)) 100% 0    / var(--_p),
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--_g)) 0    100% / var(--_p),
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--_g)) 100% 100% / var(--_p);
+}
+
+.corner-frame:hover {
+  --w: 150px;
+  transition: 0.3s ease-in-out;
 }
 
 .newscard:hover .date, .newscard:hover .title {

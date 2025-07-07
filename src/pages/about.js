@@ -1,5 +1,5 @@
 import React from "react";
-// import { Nav, NavLink, NavMenu } from "./NavbarElements";
+import TeamCard from "../components/teamcard";
 
 const About = () => {
     return (
@@ -15,10 +15,26 @@ const About = () => {
             </div>
         </section>
         <section>
-            <div className="ml-10 flex gap-5">
+            <div className="flex gap-5">
                 <div className="flex-auto bg-white">image thing</div>
                 <h1 className="text-4xl">OUR VALUES</h1>
                 <div className="flex-auto bg-white">image thing</div>
+            </div>
+            <div className="hidden md:grid my-10 mx-24 grid-cols-3 gap-4">
+                <div className="bluefill border-solid rounded-sm border-blue-300 border-2 h-32">value</div>
+                <div className="bluefill border-solid rounded-sm border-blue-300 border-2 h-32">value</div>
+                <div className="bluefill border-solid rounded-sm border-blue-300 border-2 h-32">value</div>
+            </div>
+        </section>
+        <section>
+            <div className="flex gap-5">
+                <div className="flex-auto bg-white">image thing</div>
+                <h1 className="text-4xl">OUR TEAM</h1>
+                <div className="flex-auto bg-white">image thing</div>
+            </div>
+            <div className="my-12 grid grid-cols-3 gap-4 mx-24">
+                <TeamCard/>
+                <TeamCard/>
             </div>
         </section>
         </>
