@@ -12,6 +12,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import News from "./pages/news";
 import Conspiracy from './pages/conspiracy/conspiracy';
+import Construction from './pages/construction';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/news" element={<News />} />
             <Route path="/conspiracy" element={<Conspiracy />}/>
+            <Route path="/construction" element={<Construction />}/>
         </Routes>
         <Footer/>
     </Router>
