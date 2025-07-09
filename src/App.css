@@ -75,17 +75,6 @@ section {
   box-shadow: 0 0 10px #F7006A;
 }
 
-.newscard {
-  background-color: rgba(57, 120, 252, 0.1);
-  box-shadow: 0 0 10px #3978FC;
-  backdrop-filter: blur(40px);
-  min-width: 10rem;
-  width: 100%;
-  border-radius: 5px;
-  height: min-content;
-  min-height: 22rem;
-}
-
 #overlay {
   position: fixed; /* Sit on top of the page content */
   /* display: none; Hidden by default */
@@ -106,6 +95,25 @@ section {
   top: 50%;
   transform: translate(-50%,-50%);
   z-index: 100;
+  width: 67%;
+  animation: cardOpen 0.5s ease-in;
+}
+
+@keyframes cardOpen {
+  0% {
+    width: 2px;
+    height: 2px;
+  } 
+  50% {
+    width: 67%;
+    height: 2px;
+    transform-origin: 50%;
+  } 
+  100% {
+    width: 67%;
+    height: 200px;
+    transform-origin: 50%;
+  }
 }
 
 .teamcard h1 {
@@ -143,31 +151,79 @@ section {
   transition: 0.3s ease-in-out;
 }
 
+.newscard {
+  min-width: 10rem;
+  width: 100%;
+  border-radius: 5px;
+  min-height: 9rem;
+  aspect-ratio: 9/10;
+  position: relative;
+}
+
+.newscard .date, .newscard .title {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.newscard .readmore {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: max-content;
+  max-width: 100px;
+  transition: all 0.3s ease-out;
+}
+
+.newscard .readmore:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px white;  
+  transform-origin:100% 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.newscard:hover .readmore {
+  bottom: 40%;
+  right: 1rem;
+  color: #FFA8CD;
+  max-width: calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  transition: top all 0.3s ease-out;
+}
+
+.newscard:hover .big {
+  bottom: 10%;
+}
+
+.newscard:hover .readmore:after { 
+  border-bottom: solid 2px pink;
+  transform-origin:100% 50%;
+  transition: all 0.3s ease-in-out;
+}
+
 .newscard:hover .date, .newscard:hover .title {
-  display: none;
+  visibility: hidden;
   opacity: 0;
-  animation: fadeOut 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .newscard:hover .summary {
-  display: block;
+  opacity: 1;
+  transition: all 0.3s ease-out;
 }
 
 .newscard .summary {
-  display: none;
+  position: absolute;
+  bottom:0;
+  transform: translateY(-1rem);
+  margin-right: 1rem;
+  opacity: 0;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease-out;
 }
 
-@keyframes fadeOut {
-  0% {
-    display: block;
-    opacity: 1;
-  }
-  50% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: none;
-    opacity: 0;
-  }
+progress[value] {
+  background: none;
+  border: solid white 2px;
 }

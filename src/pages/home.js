@@ -15,9 +15,13 @@ const Home = () => {
         </div>
         <section>
             <div className="sm:flex gap-5">
-                <div className="hidden sm:block sm:flex-auto bg-white">image thing</div>
+                <div className="hidden sm:block sm:flex-auto">
+                    <img src="/assets/circuit.svg" className="w-full"/>
+                </div>
                 <h1 className="text-center text-2xl md:text-3xl sm:ml-0">IT'S A CONSPIRACY!</h1>
-                <div className="flex-auto bg-white">image thing</div>
+                <div className="hidden sm:block sm:flex-auto">
+                    <img src="/assets/circuit.svg" className="w-full"/>
+                </div>
             </div>
             <h2 className="text-center my-8">Meet Mingo, a bird on a mission.</h2>
             <div className="bluefill mx-10 sm:mx-48">
