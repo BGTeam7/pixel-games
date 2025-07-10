@@ -223,7 +223,15 @@ section {
   transition: all 0.3s ease-out;
 }
 
-progress[value] {
-  background: none;
+progress {
   border: solid white 2px;
+  width: 80%;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: none;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #F7006A;
 }

@@ -38,8 +38,15 @@ function TeamCard() {
                                 <li><span className="font-bold">Skills: </span>Espionage</li>
                                 <li><span className="font-bold">Social Media: </span>Telegram</li>
                             </ul>
+                            <br/>
                             <label for="heart">❤️ </label>
                             <progress id="heart" value="32" max="100"> 32% </progress>
+                            <br/>
+                            <label for="light">⚡️ </label>
+                            <progress id="light" value="32" max="100"> 32% </progress>
+                            <br/>
+                            <label for="plus">➕ </label>
+                            <progress id="plus" value="32" max="100"> 32% </progress>
                         </div>
                         
                     </div>
