@@ -18,7 +18,6 @@ import Construction from './pages/construction';
 function App() {
   return (
     <div className="App">
-    <Router>
         <Navbar/>
         <Routes>
             <Route exact path="/" element={<Home />} />
@@ -28,7 +27,6 @@ function App() {
             <Route path="/construction" element={<Construction />}/>
         </Routes>
         <Footer/>
-    </Router>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { Nav, NavLink, NavMenu } from "./NavbarElements";
+import circuit from "../assets/circuit.svg"
 
 const Home = () => {
     return (
@@ -16,11 +16,11 @@ const Home = () => {
         <section>
             <div className="sm:flex gap-5">
                 <div className="hidden sm:block sm:flex-auto">
-                    <img src="/assets/circuit.svg" className="w-full"/>
+                    <img src={circuit} className="w-full"/>
                 </div>
                 <h1 className="text-center text-2xl md:text-3xl sm:ml-0">IT'S A CONSPIRACY!</h1>
                 <div className="hidden sm:block sm:flex-auto">
-                    <img src="/assets/circuit.svg" className="w-full"/>
+                    <img src={circuit} className="w-full"/>
                 </div>
             </div>
             <h2 className="text-center my-8">Meet Mingo, a bird on a mission.</h2>

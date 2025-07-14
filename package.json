@@ -1,7 +1,7 @@
 {
   "name": "pixel-games",
   "version": "0.1.0",
-  "homepage": "https://audreycharge.github.io/",
+  "homepage": "https://audreycharge.github.io/pixel-games",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

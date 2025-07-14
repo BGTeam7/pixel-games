@@ -22,7 +22,7 @@ const Navbar = () => {
                     transition-all z-20 duration-500 ease-in-out transform ${isOpen ? 
                     'translate-x-0' : 'translate-x-full hidden'
                         } md:translate-x-0`}>
-                <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center my-10 md:m-0" to='/'>Boundless Gamers</NavLink>
+                <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center my-10 md:m-0" to='./'>Boundless Gamers</NavLink>
                 <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center my-10 md:m-0" to='./about'>About Us</NavLink>
                 <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center my-10 md:m-0" to='./news'>News</NavLink>
                 <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center my-10 md:m-0" to='./construction'>Donate</NavLink>
