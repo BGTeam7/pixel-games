@@ -1,6 +1,7 @@
 import React from "react";
 import TeamCard from "../components/teamcard";
-import logo from "../assets/logo512.png"
+import logo from "../assets/logo512.png";
+import TeamMembers from "../data/teammembers";
 
 const About = () => {
     return (
@@ -45,9 +46,11 @@ const About = () => {
                 <div className="flex-auto bg-white">image thing</div>
             </div>
             <div className="my-12 flex flex-wrap justify-center gap-3 md:gap-6 mx-4 md:mx-24">
-                <TeamCard/>
-                <TeamCard/><TeamCard/><TeamCard/>
-                <TeamCard/><TeamCard/>
+                {TeamMembers.map((e) => {
+                    return (
+                        <TeamCard name={e.name} pronouns={e.pronouns} role={e.role} skills={e.skills} email={e.email} img={e.img} fact={e.fact}/>
+                    );
+                })}
             </div>
         </section>
         </>
