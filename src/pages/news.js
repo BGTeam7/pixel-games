@@ -7,8 +7,8 @@ const News = () => {
         <>
         <section>
             <div className="sm:ml-10 mb-4 sm:flex gap-5">
-                <h1 className="text-2xl md:text-3xl text-center sm:text-left">LATEST NEWS</h1>
-                <div className="flex-auto bg-white">image thing</div>
+                <h1 className="text-2xl md:text-4xl text-center sm:text-left">LATEST NEWS</h1>
+                <div className="flex-auto my-3 bg-pink-300"></div>
             </div>
             <div className="flex flex-col sm:grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 m-4 md:m-24 gap-4">
                 <div className="newscard col-span-2 md:row-span-2 flex flex-col gap-4">

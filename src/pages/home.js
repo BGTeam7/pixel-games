@@ -1,44 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import circuit from "../assets/circuit.svg"
+import logo from "../assets/logo_main_light.svg"
+import conspiracy from "../assets/conspiracy_placeholder.png"
+import divider from "../assets/hero_divider.svg"
 
 const Home = () => {
     return (
         <>
-        <div className="relative hero">
-            <div className="absolute">insert hero image</div>
-            <div className="absolute right-0">insert gradient here</div>
-            <h1 className="absolute mx-auto md:right-10 bottom-1/4 text-right font-bold z-10 text-xl md:text-3xl">
-                Welcome to<br/>Pixel Games<br/>Studios!
+        <div className="hero md:grid grid-cols-2 gap-20 p-24">
+            <img src={logo} className="w-full self-center"/>
+            <h1 className="text-white self-center">
+                creating games for good
             </h1>
-
+        </div>
+        <div>
+            <img src={divider} className="w-full"/>
         </div>
         <section>
-            <div className="sm:flex gap-5">
-                <div className="hidden sm:block sm:flex-auto">
-                    <img src={circuit} className="w-full"/>
+            <div className="sm:flex justify-center gap-5">
+                <div className="hidden sm:block bg-pink-300 my-5 w-32">
                 </div>
-                <h1 className="text-center text-2xl md:text-3xl sm:ml-0">IT'S A CONSPIRACY!</h1>
-                <div className="hidden sm:block sm:flex-auto">
-                    <img src={circuit} className="w-full"/>
+                <h1 className="text-center text-2xl md:text-6xl sm:ml-0 w-max">IT'S A CONSPIRACY!</h1>
+                <div className="hidden sm:block bg-pink-300 my-5 w-32">
                 </div>
             </div>
-            <h2 className="text-center my-8">Meet Mingo, a bird on a mission.</h2>
-            <div className="bluefill mx-10 sm:mx-48">
-                <Link to="/conspiracy">
-                    <div className="corner-frame md:p-48" >insert image here</div>
+            <div className="mx-10 sm:mx-48">
+                <Link to="/">
+                    <img src={conspiracy}/>
                 </Link>
                 
             </div>
-            <h2 className="text-center my-8">Find out if it's all a conspiracy... or is it?</h2>
+            <h2 className="text-center my-8">What's happening to all the animals?</h2>
         </section>
-        <section>
-            <div className="sm:flex gap-5">
-                <div className="hidden sm:block sm:flex-auto bg-white">image thing</div>
-                <h1 className="text-center text-2xl md:text-3xl sm:ml-0">WHAT'S NEW?</h1>
-                <div className="flex-auto bg-white">image thing</div>
+        {/* <section>
+            <div className="sm:flex justify-center gap-5">
+                <div className="hidden sm:block bg-pink-300 my-5 w-32">
+                </div>
+                <h1 className="text-center text-2xl md:text-6xl sm:ml-0 w-max">WHAT'S NEW</h1>
+                <div className="hidden sm:block bg-pink-300 my-5 w-32">
+                </div>
             </div>
-        </section>
+        </section> */}
         </>
     );
 };

@@ -1,9 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import TeamCard from "../components/teamcard";
-import logo from "../assets/logo512.png";
+import logo from "../assets/logo_main.svg";
 import TeamMembers from "../data/teammembers";
 
 const About = () => {
+
+    const [
+        activeRole,
+        setActiveRole,
+    ] = useState("board");
+
+    const handleRadioChange = (value) => {
+        setActiveRole(value);
+        console.log(value);
+    };
+
+    const role = TeamMembers.filter(member => 
+        member.team === activeRole
+    );
+
     return (
         <>
         <div className="relative hero">
@@ -16,15 +31,18 @@ const About = () => {
         </div>
         <section>
             <div className="sm:ml-10 mb-4 sm:flex gap-5">
-                <h1 className="text-2xl md:text-3xl text-center sm:text-left">WHO ARE WE?</h1>
-                <div className="flex-auto bg-white">image thing</div>
+                <h1 className="text-2xl md:text-4xl text-center sm:text-left">WHO ARE WE?</h1>
+                <div className="flex-auto my-3 bg-pink-300"></div>
             </div>
             <div className="mx-4 md:mx-24 items-center flex flex-col md:flex-row gap-8">
                 <img src={logo} className="w-36 h-full justify-center"/>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                <p className="text-lg">Pixel Games Studios is our game development branch at Boundless Gamers.
+                    As a nonprofit initiative, the game will financially support Extra Life, Gamers Outreach, and Stack Up.
+The team is comprised of a unique blend of talent, including students, seasoned professionals, and veteran developers from the gaming industry.
+                </p>
             </div>
         </section>
-        <section>
+        {/* <section>
             <div className="sm:flex gap-5">
                 <div className="hidden sm:block sm:flex-auto bg-white">image thing</div>
                 <h1 className="text-center text-2xl md:text-3xl sm:ml-0">OUR VALUES</h1>
@@ -38,15 +56,71 @@ const About = () => {
             <div className="m-8 md:hidden border-x-2 border-pink-300 p-4">
                 <div className="bluefill border-solid rounded-sm border-blue-300 border-2 h-32">test</div>
             </div>
-        </section>
+        </section> */}
         <section>
-            <div className="sm:flex gap-5">
-                <div className="hidden sm:block sm:flex-auto bg-white">image thing</div>
-                <h1 className=" text-center text-2xl md:text-3xl sm:ml-0">OUR TEAM</h1>
-                <div className="flex-auto bg-white">image thing</div>
+            <div className="sm:flex justify-center gap-5">
+                <div className="hidden sm:block bg-pink-300 my-3 ml-48 w-32">
+                </div>
+                <h1 className="text-center text-2xl md:text-4xl sm:ml-0 w-max">OUR TEAM</h1>
+                <div className="hidden sm:block bg-pink-300 my-3 mr-48 w-32">
+                </div>
             </div>
-            <div className="my-12 flex flex-wrap justify-center gap-3 md:gap-6 mx-4 md:mx-24">
-                {TeamMembers.map((e) => {
+            <div className="radioGroup grid grid-cols-3 md:grid-cols-5 border-solid border-4 border-b-0 border-blue-900 mx-4 md:mx-24">
+                <div className="radioButton bg-inherit">
+                    <input
+                        className="test"
+                        type="radio"
+                        id="board"
+                        value="board"
+                        checked={activeRole === "board"}
+                        onChange={()=>handleRadioChange("board")}
+                    />
+                    <label htmlFor="board">executive board</label>
+                </div>
+                <div className="radioButton bg-blue-300">
+                    <input
+                        className="test"
+                        type="radio"
+                        id="dev"
+                        value="dev"
+                        checked={activeRole === "dev"}
+                        onChange={()=>handleRadioChange("dev")}
+                    />
+                    <label htmlFor="dev">Development</label>
+                </div>
+                <div className="radioButton bg-red-300">
+                    <input
+                        type="radio"
+                        id="artist"
+                        value="artist"
+                        checked={activeRole === "artist"}
+                        onChange={()=>handleRadioChange("artist")}
+                    />
+                    <label htmlFor="artist">Artist</label>
+                </div>
+                <div className="radioButton bg-yellow-100">
+                    <input
+                        type="radio"
+                        id="sound"
+                        value="sound"
+                        checked={activeRole === "sound"}
+                        onChange={()=>handleRadioChange("sound")}
+                    />
+                    <label htmlFor="sound">Sound</label>
+                </div>
+                <div className="radioButton bg-green-300">
+                    <input
+                        type="radio"
+                        id="writer"
+                        value="writer"
+                        checked={activeRole === "writer"}
+                        onChange={()=>handleRadioChange("writer")}
+                    />
+                    <label htmlFor="writer">Writer</label>
+                </div>
+            </div>
+            <div className="mb-12 flex flex-wrap justify-center gap-3 md:gap-6 mx-4 md:mx-24 bundle border-blue-800 border-solid border-4 border-t-0 p-10">
+                {role.map((e) => {
                     return (
                         <TeamCard name={e.name} pronouns={e.pronouns} role={e.role} skills={e.skills} email={e.email} img={e.img} fact={e.fact}/>
                     );

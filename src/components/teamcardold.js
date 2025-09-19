@@ -15,23 +15,14 @@ function TeamCard(props) {
 
     return (
         <div>
-            <div className="teamcard" onClick={setToggle}>
-                <div className="w-24 sm:w-64 aspect-square p-1">
-                    <div className="w-full">
-                        <img loading="lazy" src={logo}/>
-                    </div>
-                    
-                    <h1 className="text-center text-sm md:text-lg">{props.name}</h1>
-                    <div className="info">
-                        <p className="text-center text-xs md:text-base uppercase font-semibold">{props.role}</p>
-                        <p className="details">{props.fact}</p>
-                        <p className="details">linkedin</p>
-                        <p className="details">{props.email}</p>
-                        <p className="details">portfolio</p>
-                    </div>
+            <div className="bluefill" onClick={setToggle}>
+                <div className="w-24 sm:w-52 aspect-square corner-frame border-blue-300 p-1">
+                    <img loading="lazy" src={logo}/>
+                    <p className="text-center text-sm md:text-lg">{props.name}</p>
+                    <p className="text-center text-xs md:text-base">{props.role}</p>
                 </div>
             </div>
-            {/* {toggle &&(
+            {toggle &&(
                 <div>
                     <div id="overlay" onClick={setToggle}></div>
                     <div className="expanded-card bluefill flex flex-col md:flex-row-reverse gap-2 p-2">
@@ -61,7 +52,7 @@ function TeamCard(props) {
                         
                     </div>
                 </div>
-            )} */}
+            )}
         </div>
         
     )
