@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pixel-games/static/css/main.405d6dc4.css",
-    "main.js": "/pixel-games/static/js/main.1f3f58c0.js",
+    "main.css": "/pixel-games/static/css/main.63b341cf.css",
+    "main.js": "/pixel-games/static/js/main.e3f78a3b.js",
     "static/js/453.91e3e5bf.chunk.js": "/pixel-games/static/js/453.91e3e5bf.chunk.js",
     "static/media/conspiracy_placeholder.png": "/pixel-games/static/media/conspiracy_placeholder.a136c648492d370047af.png",
     "static/media/superstar_memesbruh03.ttf": "/pixel-games/static/media/superstar_memesbruh03.cbeb747364ac0348b958.ttf",
@@ -13,12 +13,12 @@
     "static/media/circuit.svg": "/pixel-games/static/media/circuit.d53dd7885b0a1efc474cc1df5004d01b.svg",
     "index.html": "/pixel-games/index.html",
     "static/media/newscard_border.svg": "/pixel-games/static/media/newscard_border.3fae255485ce8101889e.svg",
-    "main.405d6dc4.css.map": "/pixel-games/static/css/main.405d6dc4.css.map",
-    "main.1f3f58c0.js.map": "/pixel-games/static/js/main.1f3f58c0.js.map",
+    "main.63b341cf.css.map": "/pixel-games/static/css/main.63b341cf.css.map",
+    "main.e3f78a3b.js.map": "/pixel-games/static/js/main.e3f78a3b.js.map",
     "453.91e3e5bf.chunk.js.map": "/pixel-games/static/js/453.91e3e5bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.405d6dc4.css",
-    "static/js/main.1f3f58c0.js"
+    "static/css/main.63b341cf.css",
+    "static/js/main.e3f78a3b.js"
   ]
 }
