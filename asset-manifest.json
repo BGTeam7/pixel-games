@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9c755cc.css",
-    "main.js": "/static/js/main.6261ac96.js",
-    "static/js/453.1a62ed5f.chunk.js": "/static/js/453.1a62ed5f.chunk.js",
-    "static/media/conspiracy_placeholder.png": "/static/media/conspiracy_placeholder.a136c648492d370047af.png",
-    "static/media/superstar_memesbruh03.ttf": "/static/media/superstar_memesbruh03.cbeb747364ac0348b958.ttf",
-    "static/media/logo_main.svg": "/static/media/logo_main.18cfdf15e2cae2516e75503e6b15f8dd.svg",
-    "static/media/logo_main_light.svg": "/static/media/logo_main_light.8d38be2f121d39eefef7b8c218ba4aa0.svg",
-    "static/media/logo_light.svg": "/static/media/logo_light.355fef6d24c69d0dd28965a6faa05a34.svg",
-    "static/media/hero_divider.svg": "/static/media/hero_divider.b091f4d3382aa9945ed0b4c95d40b49a.svg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/circuit.svg": "/static/media/circuit.d53dd7885b0a1efc474cc1df5004d01b.svg",
-    "index.html": "/index.html",
-    "static/media/newscard_border.svg": "/static/media/newscard_border.3fae255485ce8101889e.svg",
-    "main.c9c755cc.css.map": "/static/css/main.c9c755cc.css.map",
-    "main.6261ac96.js.map": "/static/js/main.6261ac96.js.map",
-    "453.1a62ed5f.chunk.js.map": "/static/js/453.1a62ed5f.chunk.js.map"
+    "main.css": "/pixel-games/static/css/main.63cd5c5e.css",
+    "main.js": "/pixel-games/static/js/main.a0a3fb97.js",
+    "static/js/453.1a62ed5f.chunk.js": "/pixel-games/static/js/453.1a62ed5f.chunk.js",
+    "static/media/conspiracy_placeholder.png": "/pixel-games/static/media/conspiracy_placeholder.a136c648492d370047af.png",
+    "static/media/superstar_memesbruh03.ttf": "/pixel-games/static/media/superstar_memesbruh03.cbeb747364ac0348b958.ttf",
+    "static/media/logo_main.svg": "/pixel-games/static/media/logo_main.18cfdf15e2cae2516e75503e6b15f8dd.svg",
+    "static/media/logo_main_light.svg": "/pixel-games/static/media/logo_main_light.8d38be2f121d39eefef7b8c218ba4aa0.svg",
+    "static/media/logo_light.svg": "/pixel-games/static/media/logo_light.355fef6d24c69d0dd28965a6faa05a34.svg",
+    "static/media/hero_divider.svg": "/pixel-games/static/media/hero_divider.b091f4d3382aa9945ed0b4c95d40b49a.svg",
+    "static/media/logo.svg": "/pixel-games/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/circuit.svg": "/pixel-games/static/media/circuit.d53dd7885b0a1efc474cc1df5004d01b.svg",
+    "index.html": "/pixel-games/index.html",
+    "static/media/newscard_border.svg": "/pixel-games/static/media/newscard_border.3fae255485ce8101889e.svg",
+    "main.63cd5c5e.css.map": "/pixel-games/static/css/main.63cd5c5e.css.map",
+    "main.a0a3fb97.js.map": "/pixel-games/static/js/main.a0a3fb97.js.map",
+    "453.1a62ed5f.chunk.js.map": "/pixel-games/static/js/453.1a62ed5f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9c755cc.css",
-    "static/js/main.6261ac96.js"
+    "static/css/main.63cd5c5e.css",
+    "static/js/main.a0a3fb97.js"
   ]
 }
