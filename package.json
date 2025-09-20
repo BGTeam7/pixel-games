@@ -1,7 +1,7 @@
 {
-  "name": "pixel-games",
+  "name": "pixel-games-studio",
   "version": "0.1.0",
-  "homepage": "https://bgteam7.github.io/pixel-games",
+  "homepage": "https://pixelgamesstudio.org",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

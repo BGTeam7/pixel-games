@@ -10,6 +10,18 @@ h1 {
   color: #14077D;
 }
 
+h2 {
+  font-family: superStar;
+  font-size: 56px;
+}
+
+.textgradient {
+  background: linear-gradient(69deg,#6193FF 35%,#F7006A 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -330,26 +342,27 @@ progress[value]::-moz-progress-bar {
 
 input[type=radio] {
   appearance: none;
+
 }
 
 .radioButton {
-  text-align: center;
-  padding: 10px 0;
   border: 4px #14077D solid;
   border-left: none;
-  border-radius: 0 20px 0 20px;
+  border-radius: 0 1rem 0 0;
 }
 
 input[type=radio]+label {
-  width: 150px;
-  padding: 10px;
+  display: block;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: larger;
   text-transform: uppercase;
   font-family: superStar;
-  /* background-color: white; */
+  background-color: #f0f0f0;
+  cursor: pointer;
 }
 
 .radioButton:has( > [type=radio]:checked) {
-  /* background-color: white; */
   color: #282c34;
-  border-style: none;
+  border-bottom: none;
 }

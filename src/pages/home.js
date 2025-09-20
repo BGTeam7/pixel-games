@@ -8,9 +8,9 @@ import divider from "../assets/hero_divider.svg"
 const Home = () => {
     return (
         <>
-        <div className="hero md:grid grid-cols-2 gap-20 p-24">
+        <div className="hero space-y-24 md:grid grid-cols-2 gap-20 p-8 md:p-24">
             <img src={logo} className="w-full self-center"/>
-            <h1 className="text-white self-center">
+            <h1 className="text-white self-center text-center md:text-left text-2xl md:text-6xl">
                 creating games for good
             </h1>
         </div>
@@ -18,11 +18,11 @@ const Home = () => {
             <img src={divider} className="w-full"/>
         </div>
         <section>
-            <div className="sm:flex justify-center gap-5">
-                <div className="hidden sm:block bg-pink-300 my-5 w-32">
+            <div className="flex justify-center gap-5">
+                <div className="block bg-pink-300 my-5 w-32">
                 </div>
                 <h1 className="text-center text-2xl md:text-6xl sm:ml-0 w-max">IT'S A CONSPIRACY!</h1>
-                <div className="hidden sm:block bg-pink-300 my-5 w-32">
+                <div className="block bg-pink-300 my-5 w-32">
                 </div>
             </div>
             <div className="mx-10 sm:mx-48">
@@ -31,7 +31,8 @@ const Home = () => {
                 </Link>
                 
             </div>
-            <h2 className="text-center my-8">What's happening to all the animals?</h2>
+            <h2 className="text-center mt-8 textgradient">COMING SOON...</h2>
+            <h2 className="text-center text-2xl">Stay tuned for more!</h2>
         </section>
         {/* <section>
             <div className="sm:flex justify-center gap-5">

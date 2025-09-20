@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import TeamCard from "../components/teamcard";
 import logo from "../assets/logo_main.svg";
 import TeamMembers from "../data/teammembers";
+import divider from "../assets/hero_divider.svg"
 
 const About = () => {
 
@@ -21,13 +22,16 @@ const About = () => {
 
     return (
         <>
-        <div className="relative hero">
+        {/* <div className="relative hero">
             <div className="absolute">insert hero image</div>
             <div className="absolute right-0">insert gradient here</div>
             <h1 className="absolute mx-auto md:right-10 bottom-1/4 text-right font-bold z-10 text-xl md:text-3xl">
                 Some quote or mission<br/>Statement Here
             </h1>
 
+        </div> */}
+        <div>
+            <img src={divider} className="w-full"/>
         </div>
         <section>
             <div className="sm:ml-10 mb-4 sm:flex gap-5">
@@ -58,17 +62,16 @@ The team is comprised of a unique blend of talent, including students, seasoned 
             </div>
         </section> */}
         <section>
-            <div className="sm:flex justify-center gap-5">
-                <div className="hidden sm:block bg-pink-300 my-3 ml-48 w-32">
+            <div className="flex justify-center gap-5 m-8">
+                <div className="block bg-pink-300 my-3 md:my-5 w-32">
                 </div>
-                <h1 className="text-center text-2xl md:text-4xl sm:ml-0 w-max">OUR TEAM</h1>
-                <div className="hidden sm:block bg-pink-300 my-3 mr-48 w-32">
+                <h1 className="text-center text-2xl md:text-5xl sm:ml-0 w-max">OUR TEAM</h1>
+                <div className="block bg-pink-300 my-3 md:my-5 w-32">
                 </div>
             </div>
-            <div className="radioGroup grid grid-cols-3 md:grid-cols-5 border-solid border-4 border-b-0 border-blue-900 mx-4 md:mx-24">
-                <div className="radioButton bg-inherit">
+            <div className="md:grid grid-cols-3 md:grid-cols-5 mx-4 md:mx-24 md:bg-[#14077D] rounded-r-2xl border-l-4 border-solid border-[#14077d] text-sm md:text-xl">
+                <div className="radioButton bg-purple-300">
                     <input
-                        className="test"
                         type="radio"
                         id="board"
                         value="board"
@@ -79,7 +82,6 @@ The team is comprised of a unique blend of talent, including students, seasoned 
                 </div>
                 <div className="radioButton bg-blue-300">
                     <input
-                        className="test"
                         type="radio"
                         id="dev"
                         value="dev"
@@ -98,7 +100,7 @@ The team is comprised of a unique blend of talent, including students, seasoned 
                     />
                     <label htmlFor="artist">Artist</label>
                 </div>
-                <div className="radioButton bg-yellow-100">
+                <div className="radioButton bg-yellow-200">
                     <input
                         type="radio"
                         id="sound"
@@ -126,6 +128,7 @@ The team is comprised of a unique blend of talent, including students, seasoned 
                     );
                 })}
             </div>
+            <p className="text-center">More Coming Soon!</p>
         </section>
         </>
     );
