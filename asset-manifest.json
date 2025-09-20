@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pixel-games/static/css/main.63cd5c5e.css",
-    "main.js": "/pixel-games/static/js/main.0a0a9a0e.js",
+    "main.js": "/pixel-games/static/js/main.d47eab0d.js",
     "static/js/453.91e3e5bf.chunk.js": "/pixel-games/static/js/453.91e3e5bf.chunk.js",
     "static/media/conspiracy_placeholder.png": "/pixel-games/static/media/conspiracy_placeholder.a136c648492d370047af.png",
     "static/media/superstar_memesbruh03.ttf": "/pixel-games/static/media/superstar_memesbruh03.cbeb747364ac0348b958.ttf",
@@ -14,11 +14,11 @@
     "index.html": "/pixel-games/index.html",
     "static/media/newscard_border.svg": "/pixel-games/static/media/newscard_border.3fae255485ce8101889e.svg",
     "main.63cd5c5e.css.map": "/pixel-games/static/css/main.63cd5c5e.css.map",
-    "main.0a0a9a0e.js.map": "/pixel-games/static/js/main.0a0a9a0e.js.map",
+    "main.d47eab0d.js.map": "/pixel-games/static/js/main.d47eab0d.js.map",
     "453.91e3e5bf.chunk.js.map": "/pixel-games/static/js/453.91e3e5bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63cd5c5e.css",
-    "static/js/main.0a0a9a0e.js"
+    "static/js/main.d47eab0d.js"
   ]
 }
