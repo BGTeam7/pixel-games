@@ -328,6 +328,13 @@ progress[value]::-moz-progress-bar {
 .footer {
   border: solid 15px;
   border-image: url("./assets/footer_border.png") 30;
+  background-color: white;
+}
+
+.footerbg {
+  background-color: rgba(7, 16, 74, 0.5);
+  padding: 2rem;
+
 }
 
 .button {

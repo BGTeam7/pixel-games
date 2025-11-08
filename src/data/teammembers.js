@@ -67,6 +67,72 @@ const TeamMembers = [
         team: "artist",
         fact: "Loves travelling."
     },
+    {
+        id:4,
+        img: "insert",
+        name: "Soundwave",
+        pronouns: "he/him",
+        role: "communications specialist",
+        skills: "Leadership, Creativity, Writer",
+        email: "mikep@boundlessgamers.org",
+        team: "sound",
+        fact: "He's ine and is writing his own version."
+    },
+    {
+        id:5,
+        img: "insert",
+        name: "Sunstreaker",
+        pronouns: "he/him",
+        role: "Frame Artist",
+        skills: "Espionage, Electric Bass",
+        email: "mikep@boundlessgamers.org",
+        team: "artist",
+        fact: "Loves travelling."
+    },
+    {
+        id:4,
+        img: "insert",
+        name: "Soundwave",
+        pronouns: "he/him",
+        role: "communications specialist",
+        skills: "Leadership, Creativity, Writer",
+        email: "mikep@boundlessgamers.org",
+        team: "sound",
+        fact: "He's ine and is writing his own version."
+    },
+    {
+        id:5,
+        img: "insert",
+        name: "Sunstreaker",
+        pronouns: "he/him",
+        role: "Frame Artist",
+        skills: "Espionage, Electric Bass",
+        email: "mikep@boundlessgamers.org",
+        team: "artist",
+        fact: "Loves travelling."
+    },
+    {
+        id:4,
+        img: "insert",
+        name: "Soundwave",
+        pronouns: "he/him",
+        role: "communications specialist",
+        skills: "Leadership, Creativity, Writer",
+        email: "mikep@boundlessgamers.org",
+        team: "sound",
+        fact: "He's ine and is writing his own version."
+    },
+    {
+        id:5,
+        img: "insert",
+        name: "Sunstreaker",
+        pronouns: "he/him",
+        role: "Frame Artist",
+        skills: "Espionage, Electric Bass",
+        email: "mikep@boundlessgamers.org",
+        team: "artist",
+        fact: "Loves travelling."
+    },
     
 ];
 

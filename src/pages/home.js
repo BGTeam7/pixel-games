@@ -25,9 +25,9 @@ const Home = () => {
                 <div className="block bg-pink-300 my-5 w-32">
                 </div>
             </div>
-            <div className="mx-10 sm:mx-48">
+            <div className="mx-10 sm:mx-48 flex">
                 <Link to="/">
-                    <img src={conspiracy}/>
+                    <img src={conspiracy} className="justify-self-center"/>
                 </Link>
                 
             </div>

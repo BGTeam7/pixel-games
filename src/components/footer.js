@@ -4,12 +4,16 @@ import { BsList, BsXLg } from "react-icons/bs";
 import { FaInstagram, FaDiscord, FaFacebook, FaTwitch } from "react-icons/fa";
 import { PiXLogo } from "react-icons/pi";
 import logo from "../assets/logo_main.svg"
+import pic from "../assets/footerbg.png"
 
 const Footer = () => {
 
 
     return (
-            <footer className="footer mb-10 mx-4 md:mx-8 border-solid rounded-md px-10 py-4 sm:flex gap-6">
+        <div>
+            <img src={pic} className="w-full opacity-50"/>
+            <div className="footerbg">
+                <footer className="footer mb-10 mx-4 md:mx-8 border-solid rounded-md px-10 py-4 sm:flex gap-6">
                 <img src={logo} className="sm:w-1/4"/>
                 <div className="w-full text-[#14077D]">
                     <div className="flex justify-around flex-col sm:flex-row text-center">
@@ -49,7 +53,9 @@ const Footer = () => {
                         Pixel Games Studios © 2025
                     </div>
                 </div>
-        </footer>
+            </footer>
+            </div>
+        </div> 
     );
 };
 
