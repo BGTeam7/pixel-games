@@ -12,6 +12,7 @@ import About from "./pages/about";
 import News from "./pages/news";
 import Construction from './pages/construction';
 import TersmOfUse from './pages/termsofuse';
+import Privacy from './pages/privacy';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/construction" element={<Construction />}/>
             <Route path="/terms-of-use" element={<TersmOfUse />}/>
+            <Route path="/privacy" element={<Privacy />}/>
         </Routes>
         <Footer/>
       </Router>

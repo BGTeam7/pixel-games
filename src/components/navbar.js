@@ -27,13 +27,12 @@ const Navbar = () => {
                         } md:translate-x-0`}>
                 <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center font-medium my-10 md:m-0" to='./'>Home</NavLink>
                 <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center font-medium my-10 md:m-0" to='./about'>about</NavLink>
-                {/* <NavLink onClick={() => setIsOpen(!isOpen)} className="block text-center font-medium my-10 md:m-0" to='./news'>news</NavLink> */}
-                <a href="https://www.paypal.com/donate/?hosted_button_id=RUGEY8J38GKU4&fbclid=IwZXh0bgNhZW0CMTEAAR3zgSZcImCLTqA2kp7k-JkWzn2axuD_yuD6vpf0awLrN42leFUIDYroIhM_aem_DlQq1v5p6fbh7QZeFX5VwA" className="self-center">
-                    <button className="button px-4 text-white self-center m-auto">DONATE</button>
-                </a>
-
+                <div className="flex justify-center">
+                    <a href="https://www.paypal.com/donate/?hosted_button_id=RUGEY8J38GKU4&fbclid=IwZXh0bgNhZW0CMTEAAR3zgSZcImCLTqA2kp7k-JkWzn2axuD_yuD6vpf0awLrN42leFUIDYroIhM_aem_DlQq1v5p6fbh7QZeFX5VwA" className="self-center">
+                        <button className="button px-4 text-white self-center m-auto">DONATE</button>
+                    </a>
+                </div>
             </div>
-
         </nav>
     );
 };
