@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import TeamCard from "../components/teamcard";
 import logo from "../assets/logo_main.svg";
 import TeamMembers from "../data/teammembers";
+import Team from "../data/team";
 import divider from "../assets/hero_divider.svg"
 
 import { FaCode, FaPalette, FaPen, FaMusic } from "react-icons/fa";
@@ -12,33 +13,33 @@ const About = () => {
     const [
         activeRole,
         setActiveRole,
-    ] = useState("board");
+    ] = useState("Production");
 
     const handleRadioChange = (value) => {
         setActiveRole(value);
         console.log(value);
     };
 
-    const role = TeamMembers.filter(member => 
-        member.team === activeRole
+    const role = Team.filter(member => 
+        member.team.includes(activeRole)
     );
 
     var color;
 
     switch(activeRole) {
-        case "board":
+        case "Production":
             color = "bg-purple-300";
             break;
-        case "dev":
+        case "Development":
             color = "bg-blue-300";
             break;
-        case "artist":
+        case "Art":
             color = "bg-red-300";
             break;
-        case "sound":
+        case "Audio":
             color = "bg-yellow-200";
             break;
-        case "writer":
+        case "Writing":
             color = "bg-green-300";
             break;
     }
@@ -97,58 +98,58 @@ The team is comprised of a unique blend of talent, including students, seasoned 
                     <div className="radioButton bg-purple-300">
                         <input
                             type="radio"
-                            id="board"
-                            value="board"
-                            checked={activeRole === "board"}
-                            onChange={()=>handleRadioChange("board")}
+                            id="Production"
+                            value="Production"
+                            checked={activeRole === "Production"}
+                            onChange={()=>handleRadioChange("Production")}
                         />
-                        <label htmlFor="board">executive board</label>
+                        <label htmlFor="Production">production</label>
                     </div>
                     <div className="radioButton bg-blue-300">
                         <input
                             type="radio"
-                            id="dev"
-                            value="dev"
-                            checked={activeRole === "dev"}
-                            onChange={()=>handleRadioChange("dev")}
+                            id="Development"
+                            value="Development"
+                            checked={activeRole === "Development"}
+                            onChange={()=>handleRadioChange("Development")}
                         />
-                        <label htmlFor="dev">Development</label>
+                        <label htmlFor="Development">Development</label>
                     </div>
                     <div className="radioButton bg-red-300">
                         <input
                             type="radio"
-                            id="artist"
-                            value="artist"
-                            checked={activeRole === "artist"}
-                            onChange={()=>handleRadioChange("artist")}
+                            id="Art"
+                            value="Art"
+                            checked={activeRole === "Art"}
+                            onChange={()=>handleRadioChange("Art")}
                         />
-                        <label htmlFor="artist">Artist</label>
+                        <label htmlFor="Art">Art</label>
                     </div>
                     <div className="radioButton bg-yellow-200">
                         <input
                             type="radio"
-                            id="sound"
-                            value="sound"
-                            checked={activeRole === "sound"}
-                            onChange={()=>handleRadioChange("sound")}
+                            id="Audio"
+                            value="Audio"
+                            checked={activeRole === "Audio"}
+                            onChange={()=>handleRadioChange("Audio")}
                         />
-                        <label htmlFor="sound">Sound</label>
+                        <label htmlFor="Audio">Audio</label>
                     </div>
                     <div className="radioButton bg-green-300">
                         <input
                             type="radio"
-                            id="writer"
-                            value="writer"
-                            checked={activeRole === "writer"}
-                            onChange={()=>handleRadioChange("writer")}
+                            id="Writing"
+                            value="Writing"
+                            checked={activeRole === "Writing"}
+                            onChange={()=>handleRadioChange("Writing")}
                         />
-                        <label htmlFor="writer">Writer</label>
+                        <label htmlFor="Writing">Writing</label>
                     </div>
                 </div>
                 <div className={"mb-12 flex flex-wrap justify-center gap-3 md:gap-6 mx-4 md:mx-24 bundle border-[#14077D] border-solid border-4 border-r-0 md:border-r-4 md:border-t-0 p-10 " + color}>
                     {role.map((e) => {
                         return (
-                            <TeamCard r={e.team} name={e.name} pronouns={e.pronouns} role={e.role} skills={e.skills} email={e.email} img={e.img} fact={e.fact}/>
+                            <TeamCard r={e.team} name={e.name} pronouns={e.pronouns} role={e.role} skills={e.skills} github={e.github} linkedin={e.linkedin} portfolio={e.portfolio} img={e.photo} fact={e.fact}/>
                         );
                     })}
                 </div>
@@ -157,7 +158,7 @@ The team is comprised of a unique blend of talent, including students, seasoned 
                 <div className={"h-96 overflow-scroll mb-12 w-full flex flex-wrap justify-center gap-3 ml-4 md:mx-24 border-[#14077D] border-solid border-4 border-r-0 md:border-r-4 md:border-t-0 p-10 max-h-min " + color}>
                     {role.map((e) => {
                         return (
-                            <TeamCard r={e.team} name={e.name} pronouns={e.pronouns} role={e.role} skills={e.skills} email={e.email} img={e.img} fact={e.fact}/>
+                            <TeamCard r={e.team} name={e.name} pronouns={e.pronouns} role={e.role} skills={e.skills} github={e.github} linkedin={e.linkedin} portfolio={e.portfolio} img={e.photo} fact={e.fact}/>
                         );
                     })}
                 </div>
@@ -165,54 +166,54 @@ The team is comprised of a unique blend of talent, including students, seasoned 
                     <div className="mradioButton bg-purple-300 h-full">
                         <input
                             type="radio"
-                            id="board"
-                            value="board"
-                            checked={activeRole === "board"}
-                            onChange={()=>handleRadioChange("board")}
+                            id="Production"
+                            value="Production"
+                            checked={activeRole === "Production"}
+                            onChange={()=>handleRadioChange("Production")}
                         />
-                        <label htmlFor="board">
+                        <label htmlFor="Production">
                             <img src={exec} className="w-5"/>
                         </label>
                     </div>
                     <div className="mradioButton bg-blue-300 h-full">
                         <input
                             type="radio"
-                            id="dev"
-                            value="dev"
-                            checked={activeRole === "dev"}
-                            onChange={()=>handleRadioChange("dev")}
+                            id="Development"
+                            value="Development"
+                            checked={activeRole === "Development"}
+                            onChange={()=>handleRadioChange("Development")}
                         />
-                        <label htmlFor="dev"><FaCode/></label>
+                        <label htmlFor="Development"><FaCode/></label>
                     </div>
                     <div className="mradioButton bg-red-300 h-full">
                         <input
                             type="radio"
-                            id="artist"
-                            value="artist"
-                            checked={activeRole === "artist"}
-                            onChange={()=>handleRadioChange("artist")}
+                            id="Art"
+                            value="Art"
+                            checked={activeRole === "Art"}
+                            onChange={()=>handleRadioChange("Art")}
                         />
-                        <label htmlFor="artist"><FaPalette/></label>
+                        <label htmlFor="Art"><FaPalette/></label>
                     </div>
                     <div className="mradioButton bg-yellow-200 h-full">
                         <input
                             type="radio"
-                            id="sound"
-                            value="sound"
-                            checked={activeRole === "sound"}
-                            onChange={()=>handleRadioChange("sound")}
+                            id="Audio"
+                            value="Audio"
+                            checked={activeRole === "Audio"}
+                            onChange={()=>handleRadioChange("Audio")}
                         />
-                        <label htmlFor="sound"><FaMusic/></label>
+                        <label htmlFor="Audio"><FaMusic/></label>
                     </div>
                     <div className="mradioButton bg-green-300 h-full">
                         <input
                             type="radio"
-                            id="writer"
-                            value="writer"
-                            checked={activeRole === "writer"}
-                            onChange={()=>handleRadioChange("writer")}
+                            id="Writing"
+                            value="Writing"
+                            checked={activeRole === "Writing"}
+                            onChange={()=>handleRadioChange("Writing")}
                         />
-                        <label htmlFor="writer"><FaPen/></label>
+                        <label htmlFor="Writing"><FaPen/></label>
                     </div>
                 </div>
 

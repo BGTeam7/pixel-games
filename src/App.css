@@ -153,10 +153,15 @@ section {
   border: solid #14077D 3px;
   /* background-color: #d9d9d9; */
 }
+.teamcard:hover .info {
+  min-height: 100%;
+}
 
 .teamcard:hover .details {
   /* opacity: 1; */
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
   transition: all 0.3s ease-out;
   min-height: 100%;
 }
