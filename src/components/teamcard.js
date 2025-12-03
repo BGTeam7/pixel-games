@@ -34,23 +34,6 @@ function TeamCard(props) {
         }
     }
 
-    // switch(props.r) {
-    //     case "board":
-    //         color = "bg-purple-300";
-    //         break;
-    //     case "dev":
-    //         color = "bg-blue-300";
-    //         break;
-    //     case "artist":
-    //         color = "bg-red-300";
-    //         break;
-    //     case "sound":
-    //         color = "bg-yellow-200";
-    //         break;
-    //     case "writer":
-    //         color = "bg-green-300";
-    //         break;
-    // }
     console.log(props.img + "&sz=w1000")
     var img_link = props.img + "&sz=w1000"
 
