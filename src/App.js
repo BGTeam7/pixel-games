@@ -14,6 +14,7 @@ import News from "./pages/news";
 import Construction from './pages/construction';
 import TersmOfUse from './pages/termsofuse';
 import Privacy from './pages/privacy';
+import MuteButton from './components/mute';
 
 // import music from './assets/we'
 
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar/>
+        <MuteButton/>
         <Routes>
             <Route exact path="/" element={<Home/>} />
             <Route path="/about" element={<About/>} />
@@ -33,9 +35,6 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
-      <audio id="audio" loop autoPlay> 
-        <source src="website.mp3" type="audio/mpeg"/>
-      </audio>
     </div>
   );
 }
