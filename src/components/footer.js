@@ -29,7 +29,7 @@ const Footer = () => {
                             <div>
                                 <ul className=" space-y-5">
                                     <li><a href="https://boundlessgamers.org">Boundless Gamers</a></li>
-                                    <li><a href="https://itsaconspiracy.com">It's a Conspiracy</a></li>
+                                    <li><a href="https://itsaconspiracygame.com">It's a Conspiracy</a></li>
                                     <li><a href="https://www.paypal.com/donate/?hosted_button_id=RUGEY8J38GKU4&fbclid=IwZXh0bgNhZW0CMTEAAR3zgSZcImCLTqA2kp7k-JkWzn2axuD_yuD6vpf0awLrN42leFUIDYroIhM_aem_DlQq1v5p6fbh7QZeFX5VwA">Donate</a></li>
                                 </ul>
                             </div>
